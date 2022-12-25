@@ -23,3 +23,4 @@ proof: proofValue of VP
 ※This API does not strictly generate VPs.<br>
 ※You get only the proofValue
 
+# vcCreate
