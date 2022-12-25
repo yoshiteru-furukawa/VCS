@@ -6,7 +6,7 @@ Using https://github.com/mattrglobal/bbs-signatures
 Throw a POST request to the following URL
 
 
-//To create VP...
+//To create VC...
 http://domain:3000/create_vc
 
 
