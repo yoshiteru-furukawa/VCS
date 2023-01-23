@@ -6,13 +6,12 @@ import {
   bls12381toBbs,
   BBS_SIGNATURE_LENGTH,
   BbsKeyPair,
-  blsSign,
   BlsKeyPair,
 } from "@mattrglobal/bbs-signatures";
 import { base64Encode, base64Decode, stringToBytes } from "./utility";
   
 
-async function createProof(
+async function blsSign(
     pk: string,
     sk: string,
     messages: string[]) : Promise<string>{
@@ -57,4 +56,4 @@ async function createProof(
   
 }
 
-export default createProof;
+export default blsSign;
