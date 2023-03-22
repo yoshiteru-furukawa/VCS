@@ -5,6 +5,7 @@ This repository is implemented using https://github.com/mattrglobal/bbs-signatur
 This repository is implemented using Express with typescript
 ```
 cd VCS
+npm install
 npx ts-node index.ts
 ```
 You can use other tools such as pm2.
