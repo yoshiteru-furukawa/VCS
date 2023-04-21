@@ -24,15 +24,12 @@ async function blsSign(
 
     const pk_d = base64Decode(pk);
     const sk_d = base64Decode(sk);
-
-    //const keyPair3 = await generateBls12381G2KeyPair(); //A test in case that the key pair is generated here.
     
     /* Setup for the BlsKeyPair */
     const blsKeyPair: BlsKeyPair = {
       publicKey: pk_d,
       secretKey: sk_d,
-      //publicKey: keyPair3.publicKey,
-      //secretKey: keyPair3.secretKey,
+
     };
 
      /* Generating a BbsKeyPair using the BlsKeyPair & messageCount */
@@ -41,7 +38,6 @@ async function blsSign(
         messageCount: messages.length,
     });
 
-    //console.log(bbsKeyPair);
   
     /* Setting the request format */
     const request: BbsSignRequest = {

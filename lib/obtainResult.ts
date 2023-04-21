@@ -1,4 +1,3 @@
-//import {blsCreateProof} from "@mattrglobal/bbs-signatures";
 import {blsVerifyProof, BbsVerifyProofRequest} from "@mattrglobal/bbs-signatures";
 import { base64Encode, base64Decode, stringToBytes } from "./utility";
   
@@ -26,7 +25,6 @@ async function obtainResult(
     const isProofVerified_ori = await blsVerifyProof(request);
     const isProofVerified = JSON.stringify(isProofVerified_ori);
 
-    //console.log(`Proof verified ? ${isProofVerified}`);
 
     return isProofVerified;
   
